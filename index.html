@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection Query Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Collection Query Tool</h1>
+    </header>
+    <main>
+        <label for="collections">Select a Collection:</label>
+        <select id="collections">
+            <option value="" disabled selected>Loading...</option>
+        </select>
+
+        <label for="query">Query:</label>
+        <input type="text" id="query" placeholder="Enter your query" />
+
+        <label for="metadata">Metadata (Python dict):</label>
+        <input type="text" id="metadata" placeholder="e.g., {'key': 'value'}" />
+
+        <button id="submit-btn">Submit Query</button>
+
+        <section id="results-container">
+            <h2>Results</h2>
+            <div id="results"></div>
+            <div id="pagination-controls"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
