@@ -87,6 +87,10 @@ button:hover {
 #pagination-controls {
     margin-top: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .pagination-button {
@@ -94,11 +98,15 @@ button:hover {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    flex: 0 0 auto; /* Ensures buttons don't stretch */
+    max-width: 50px;
+    text-align: center;
 }
 
 .pagination-button:hover {
     background-color: #45a049;
 }
+

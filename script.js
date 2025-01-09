@@ -60,6 +60,10 @@ async function submitQuery() {
 function displayResults(results) {
     const resultsContainer = document.getElementById("results");
     const paginationControls = document.getElementById("pagination-controls");
+    const totalResults = document.getElementById("total-results");
+
+    // Set the total number of results
+    totalResults.textContent = results.length;
 
     // Clear previous results
     resultsContainer.innerHTML = "";
@@ -99,6 +103,7 @@ function displayResults(results) {
         paginationControls.appendChild(button);
     }
 }
+
 
 // Initialize app
 document.getElementById("submit-btn").addEventListener("click", submitQuery);
