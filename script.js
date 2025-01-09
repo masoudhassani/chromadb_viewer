@@ -76,7 +76,13 @@ function displayResults(results) {
         results.slice(start, end).forEach(result => {
             const card = document.createElement("div");
             card.classList.add("result-card");
-            card.innerHTML = `<p>${JSON.stringify(result)}</p>`;
+
+            card.innerHTML = `
+                <h3>ID: ${result.id}</h3>
+                <p><strong>Document:</strong> ${result.document}</p>
+                <pre>${JSON.stringify(result.metadata, null, 2)}</pre>
+            `;
+
             resultsContainer.appendChild(card);
         });
     }
