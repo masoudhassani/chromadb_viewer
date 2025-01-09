@@ -1,2 +1,3 @@
 chromadb==0.5.23
 Flask
+pyaml
