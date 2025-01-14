@@ -62,7 +62,7 @@ class ChromadbConnector:
             list: A list of collection names.
         """
         collections = self.client.list_collections()
-        return [collection.name for collection in collections]
+        return collections
 
     def list_documents(self, collection_name):
         """
