@@ -1,0 +1,14 @@
+# local development environment configurations
+local:
+  chromadb:
+    host: "127.0.0.1"
+    port: "8000"
+    auth_token: ""
+    no_db_server: False   # If True, a database file will be used without creating a db server
+
+# cloud environment configurations
+cloud:
+  chromadb:
+    host: ""
+    port: ""
+    auth_token: ""
