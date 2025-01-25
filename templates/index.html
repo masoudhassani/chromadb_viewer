@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Collection Query Tool</h1>
+        <h1>Chroma Query Tool</h1>
     </header>
     <main>
         <label for="collections">Select a Collection:</label>
@@ -21,7 +21,7 @@
         <input type="text" id="query" placeholder="Enter your query" />
 
         <label for="metadata">Metadata (Python dict):</label>
-        <input type="text" id="metadata" placeholder="e.g., {'key': 'value'}" />
+        <input type="text" id="metadata" placeholder="e.g., {'key': 'value'} or {'$and': [{color': 'red'},{'price': {'$gte': 4.20}}]}" />
 
         <button id="submit-btn">Submit Query</button>
 
